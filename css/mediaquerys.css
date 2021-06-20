@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1400px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .headerMenu {
+        height: 20%;
+        width: 50%;
+        margin-right: 10px;
+        font-size: 4px;
+        display: flex;
+}
+
+}
+
+@media only screen and (max-width: 576px) {
+    
+    .headerMenu {
+        height: 10%;
+        width: 30%;
+        display:flex;
+}
+
+li {
+    font-size: 8px;
+}
+
+    .headerLogo {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgb(211, 51, 12);
+
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:"texto1 texto2"
+                        "foto1 foto2";
+    background-image: -moz-linear-gradient(to right, rgb(54, 15, 197), rgb(255, 187, 0));
+    font-size: 8px;
+}
+
+p {
+    font-size: 12px;
+}
+
+}

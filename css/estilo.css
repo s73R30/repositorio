@@ -1,0 +1,122 @@
+*{
+    margin: 8px;
+    padding: 2px;
+    font-family:'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(74, 74, 206);
+    display: flex;
+    height: 100%;
+}
+
+.headerLogo {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.headerlogo img {
+    width: 80%;
+}
+
+.headerMenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.headerMenu ul li {
+    display: inline-block;
+    letter-spacing: normal;
+    font-size: medium;
+    word-spacing: normal;
+}
+
+body {
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+table {
+    border-style: dotted;
+    border-top: 6px double #303fc2;
+    border-right: 2px double #cf0a3b;
+    border-bottom: 6px double #303fc2;
+    border-left: 2px double #cf0a3b;
+    background: gray;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: "texto1 texto2"
+                        "foto1 foto2";
+    background-image: -moz-linear-gradient(to right, rgb(197, 97, 15), rgb(0, 255, 34));
+    font-size: 25px;
+}
+
+#textoUno{
+    grid-area: texto1;
+    max-width: 100%;
+    height: 40%;
+    width: 120%;
+}
+
+#textoDos{
+    grid-area: texto2;
+    max-width: 100%;
+    height: 40%;
+    width: 120%;
+}
+
+#imagenUno{
+    grid-area: foto1    
+}
+
+#imagenUno:hover {
+    transform: skew(10deg, 5deg);
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#imagenDos{
+    grid-area: foto2
+}
+
+#imagenDos:hover {
+    transition: height 1s, width 2s;
+}
+
+p {
+    font-size: 20px;
+}
+
+p:hover{
+    transform: skew(10deg, 5deg);
+}
+
+input{
+    width: 200px;
+    height: 25px;
+}
+input:focus{
+    width: 400px;
+    background-color: #cf0a3b;
+    transition: width 2s;
+}
